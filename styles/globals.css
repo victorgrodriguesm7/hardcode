@@ -11,6 +11,7 @@ html, body {
   width: 100vw;
 
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 #__next {
