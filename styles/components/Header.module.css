@@ -1,0 +1,55 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    transform: translateY(25%);   
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.link {
+    font-size: 1.25rem;
+    color: var(--white);
+
+    text-decoration: none;
+    will-change: opacity;
+
+    transition: opacity .2s ease;
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background: var(--red);
+    color: var(--white);
+    padding: .5rem 2rem;
+
+    will-change: background;
+    transition: background .2s ease;
+}
+
+.button:hover  {
+    background: var(--red-dark);
+}
