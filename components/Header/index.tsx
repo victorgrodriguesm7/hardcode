@@ -19,7 +19,7 @@ const Header = () => {
                 <a className={styles.link} href="#metodologia">Metodologia</a>
                 <a className={styles.link} href="#servico">Serviços</a>
             </nav>
-            <button className={styles.button}>
+            <button type="button" className={styles.button}>
                 <WhatsappIcon/>
                 Let's Code
             </button>
