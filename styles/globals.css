@@ -15,6 +15,7 @@ html, body {
 
 #__next {
   --red: #E73634;
+  --red-dark: #cf302e;
   --white: #FFF;
   --black: #000;
   --light-black: #161616;
@@ -23,4 +24,21 @@ html, body {
   
   flex: 1;
   background: var(--light-black);
+}
+
+
+button {
+  cursor: pointer;
+}
+
+@media(max-width: 1080px){
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px){
+  html {
+      font-size: 87.5%;
+  }
 }
