@@ -21,7 +21,7 @@ const Header = () => {
             </nav>
             <button type="button" className={styles.button}>
                 <WhatsappIcon/>
-                Let's Code
+                Let&apos;s Code
             </button>
         </header>
     )

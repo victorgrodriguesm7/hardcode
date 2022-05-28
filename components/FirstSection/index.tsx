@@ -21,7 +21,8 @@ const FirstSection = () => {
                     layout="raw"
                     width={689}
                     height={535}
-                    className={styles.backgroundImage}/>
+                    className={styles.backgroundImage}
+                    alt="Hero Image"/>
                 <AsteriskIcon className={styles.backgroundAsterisk}/>
             </div>
             <div className={styles.cardsContainer}>
