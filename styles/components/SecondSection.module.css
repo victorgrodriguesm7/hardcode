@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+
+    background: var(--red);
+    padding: 6rem 0 24rem;
+}
+
+.background {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--black);
+}
+
+.content {
+    width: 75%;
+    left: 12.5%;
+    position: absolute;
+    bottom: 6rem;
+}
+
+.textContainer {
+    display: flex;
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+.text:first-child {
+    margin-bottom: 1rem;    
+}
+
+.subtitle {
+    display: inline-block;
+    color: var(--black);
+    font-weight: 900;
+
+    margin-top: 1rem;
+}
+
+@media (min-width: 1439px){
+    .content {   
+        width: 65%;
+        left: 16.5%;
+        bottom: 6.5rem;
+    }
+}
