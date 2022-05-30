@@ -9,6 +9,7 @@ const SecondSection = () => {
                 width={992}
                 height={407}
                 className={styles.background}
+                alt="Steve Jobs"
                 layout="raw"
                 />
             <div className={styles.content}>
@@ -22,7 +23,7 @@ const SecondSection = () => {
                         <p className={styles.text}>Todos os dias você fica sabendo de mais um jovem que ficou milionário criando uma startup que você já tinha tido a ideia com seus amigos antes. <strong>Até quando você vai viver essa vida?</strong></p>
                         <p className={styles.text}>Te apoiamos empreender. Somos a experiência em empreendedorismo e tecnologia que sua startup precisa.</p>
 
-                        <span className={styles.subtitle}>Hey ho, let's code!</span>
+                        <span className={styles.subtitle}>Hey ho, let&apos;s code!</span>
                     </div>
                 </div>
             </div>
