@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    margin-bottom: 1.5rem;
+}
+
+.imageContainer {
+    position: relative;
+
+    height: 560px;
+}
+
+.actionsContainer {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+
+    top: 4rem;
+    right: 5%;
+}
+
+.action {
+    font-size: 1.5rem;
+    color: var(--white);
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.action:first-child {
+    padding-right: 1.5rem;
+
+    border-right: 1px solid var(--white);
+}
+
+.action:disabled {
+    color: var(--white-50);
+}
+
+.loadingBar {
+    position: relative;
+
+    width: 80%;
+    height: 6px;
+    border-radius: 1rem;
+    margin: 0 auto;
+
+    background: var(--red-dark-30);
+}
+
+.bar {
+    position: absolute;
+
+    background: var(--red);
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 6px;
+    transition: right 0.2s ease;
+}
