@@ -1,0 +1,46 @@
+.button {
+    border: 0;
+    outline: 0;
+
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0 ,0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+
+    background: var(--light-black);
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+
+    color: var(--red);
+    filter: brightness(2);
+
+    font-size: 2rem;
+}

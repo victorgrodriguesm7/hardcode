@@ -53,3 +53,47 @@
         bottom: 6.5rem;
     }
 }
+
+@media (max-width: 800px){
+    .container {
+        padding-top: 0;
+    }
+
+    .background {
+        width: 90%;
+
+        margin: -2rem auto 0;
+        object-fit: contain;
+    }
+
+    .textContainer {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 88.5%;
+
+        left: 7.5%;
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        padding-top: 2rem;
+
+        padding-bottom: 30rem;
+    }
+    
+    .background {
+        width: 95%;
+
+        margin: 0 auto;
+        object-fit: fill;
+    }
+
+    .content {
+        width: 90%;
+
+        bottom: 3rem;
+    }
+}

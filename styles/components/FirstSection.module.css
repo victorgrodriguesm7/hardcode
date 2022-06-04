@@ -154,3 +154,34 @@
 .cardDescription + .cardDescription {
     margin-top: 1rem;
 }
+
+@media (max-width: 800px){
+    .container {
+        margin-top: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .knowMore {
+        margin-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .text {
+        position: relative;
+    }
+
+    .backgroundImage, .backgroundAsterisk {
+        display: none;
+    }
+
+    .cardsContainer {
+        flex-direction: column;
+    }
+}

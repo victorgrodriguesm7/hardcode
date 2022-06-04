@@ -12,9 +12,7 @@ html, body {
 
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-}
 
-#__next {
   --red: #E73634;
   --red-dark: #cf302e;
   --red-dark-30: rgba(231, 54, 52, .3);
@@ -23,8 +21,9 @@ html, body {
   --black: #000;
   --light-black: #161616;
   --lighter-black: #0E0E0E;
-  
-  
+}
+
+#__next {
   flex: 1;
   background: var(--light-black);
 }

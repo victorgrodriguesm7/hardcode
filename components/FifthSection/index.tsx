@@ -1,9 +1,21 @@
 import Image from 'next/image';
+import useMobile from '../../hooks/useMobile';
 import styles from '../../styles/components/FifthSection.module.css';
 import Slider from '../Slider';
 import SliderProvider, { useSlide } from '../Slider/context/context';
 
+const images = [
+    "/assets/fifth-section/slide-1.png",
+    "/assets/fifth-section/slide-2.png"
+];
+
+const mobileImages = [
+    "/assets/fifth-section/slide-1-mobile.png",
+    "/assets/fifth-section/slide-1-mobile.png"
+];
+
 const FifthSection = () => {
+    const { isMobile } = useMobile();
     const {
         hasNext,
         hasPrevious,
@@ -11,6 +23,9 @@ const FifthSection = () => {
         goToPrevious,
         percentage
     } = useSlide();
+
+    const slides = isMobile ? mobileImages : images;
+    const minHeight = isMobile ? 980 : 655
     
     return (
         <section className={styles.container}>
@@ -31,17 +46,20 @@ const FifthSection = () => {
                 </button>
             </div>
             <Slider
-                minHeight={655}>
-                <div className={styles.imageContainer}>
-                    <Image
-                        src="/assets/fifth-section/slide-1.png"
-                        layout='fill'/>
-                </div>
-                <div className={styles.imageContainer}>
-                    <Image
-                        src="/assets/fifth-section/slide-2.png"
-                        layout='fill'/>
-                </div>
+                minHeight={minHeight}>
+                    {
+                        slides.map((slide, i) => {
+                            return (
+                                <div
+                                    key={i}
+                                    className={styles.imageContainer}>
+                                    <Image
+                                        src={slide}
+                                        layout='fill'/>
+                                </div>
+                            )
+                        })
+                    }
             </Slider>
             <div className={styles.loadingBar}>
                 <div className={styles.bar} style={{ right: `${100 - percentage}%`}}/>

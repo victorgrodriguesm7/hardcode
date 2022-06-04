@@ -64,3 +64,18 @@
     height: 6px;
     transition: right 0.2s ease;
 }
+
+@media (max-width: 800px){
+    .imageContainer {
+        height: 872px;
+    }
+
+    .actionsContainer {
+        display: flex;
+        justify-content: center;
+        
+        top: auto;
+        width: 100%;
+        bottom: 2rem;
+    }
+}
