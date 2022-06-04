@@ -229,6 +229,12 @@
 
 .lastIcon {}
 
+@media (min-width: 801px) and (max-width: 1205px){
+        .title + div {
+            width: 100%;
+        }
+}
+
 @media (max-width: 800px){
     .title + div {
         flex-direction: column;

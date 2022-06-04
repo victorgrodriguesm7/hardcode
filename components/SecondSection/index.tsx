@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import { forwardRef } from 'react';
 import styles from '../../styles/components/SecondSection.module.css';
 
-const SecondSection = () => {
+const SecondSection: React.ForwardRefRenderFunction<HTMLElement, {}> = ({}, ref) => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} ref={ref}>
             <Image
                 src="/assets/second-section/steve-jobs.png"
                 width={992}
@@ -31,4 +32,4 @@ const SecondSection = () => {
     )
 }
 
-export default SecondSection;
+export default forwardRef(SecondSection);

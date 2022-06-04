@@ -1,12 +1,13 @@
 
 import Image from 'next/image';
+import { forwardRef } from 'react';
 import styles from '../../styles/components/ForthSection.module.css';
 import ArrowRightIcon from '../Icons/ArrowRightIcon';
 
-const ForthSection = () => {
+const ForthSection: React.ForwardRefRenderFunction<HTMLElement, {}> = ({}, ref) => {
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} ref={ref}>
             <div className={styles.section}>
                 <div className={styles.leftContainer}>
                     <h1 className={styles.title}>MVP Express</h1>
@@ -94,4 +95,4 @@ const ForthSection = () => {
     )
 }
 
-export default ForthSection;
+export default forwardRef(ForthSection);

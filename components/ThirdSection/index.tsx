@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import { forwardRef } from 'react';
 import styles from '../../styles/components/ThirdSection.module.css';
 import IdeaIcon from '../Icons/IdeaIcon';
 import SmileIcon from '../Icons/SmileIcon';
 
-const ThirdSection = () => {
+const ThirdSection: React.ForwardRefRenderFunction<HTMLElement, {}> = ({}, ref) => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} ref={ref}>
             <h1 className={styles.title}>Metodologia IBDD</h1>
             <div>
                 <div className={styles.icon}>
@@ -49,4 +50,4 @@ const ThirdSection = () => {
     );
 }
 
-export default ThirdSection;
+export default forwardRef(ThirdSection);
