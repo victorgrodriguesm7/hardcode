@@ -13,7 +13,7 @@ const Drawer = ({ close,  children }: DrawerProps) => {
 
     return createPortal(
         <div className={styles.overlay}>
-            <div className={styles.container}>
+            <div className={styles.container} onClick={close}>
                 <button
                     type='button'
                     onClick={close}
