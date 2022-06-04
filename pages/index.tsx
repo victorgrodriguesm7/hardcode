@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import FifthSection from '../components/FifthSection'
 import FirstSection from '../components/FirstSection'
 import ForthSection from '../components/ForthSection'
 import Header from '../components/Header'
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
         <SecondSection/>
         <ThirdSection/>
         <ForthSection/>
+        <FifthSection/>
       </main>
     </>
   )
